@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 6rem 0rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.outlined {
+  background: transparent;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0.75rem 1.2rem;
+  border-radius: 32px;
+  border: 2px solid red;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.outlined:hover {
+  background: red;
+  color: white;
+}
+
+.outlined:active {
+  opacity: 50%;
+}
+
+.filled {
+  background: red;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0.75rem 1.2rem;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filled:hover {
+  opacity: 75%;
+}
+
+.filled:active {
+  opacity: 50%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0rem;
+}
+
+nav img {
+    height: 72px;
+    width: 72px;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+nav .links a {
+    position: relative;
+    color: inherit;
+    opacity: 75%;
+    transition: 0.3s ease;
+}
+
+nav .links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+nav .links a:hover::after {
+    transform: scaleX(1);
+    opacity: 100%;
+}
+
+main #hero {
+    display: flex;
+    padding: 7.5rem 0rem;
+}
+
+main #hero .graphic {
+    width: 45%;
+}
+
+main #hero .graphic img {
+    border-radius: 1.75rem;
+}
+
+main #hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 55%;
+}
+
+main #hero .content h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+main #hero .content h1 .red {
+    color: red;
+}
+
+main #hero .content h1 .white {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+main #hero .content h1 .green {
+    color: green;
+}
+
+main #hero .content p {
+    margin-bottom: 2rem;
+    opacity: 75%;
+    margin-right: 2.5rem;
+}
+
+main #flavors {
+    display: flex;
+    flex-direction: column;
+    padding: 7.5rem 0rem;
+}
+
+main #flavors h1 {
+    font-size: 32px;
+    margin-bottom: 2.5rem;
+}
+
+main #flavors .popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+main #flavors .popular .flavor-image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
+main #flavors .popular .flavor-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+main #flavors .popular .flavor-content {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #catering {
+    display: flex;
+    padding: 7.5rem 0rem;
+}
+
+main #catering .graphic {
+    width: 45%;
+}
+
+main #catering .graphic img {
+    border-radius: 1.75rem;
+}
+
+main #catering .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 55%;
+}
+
+main #catering .content h1 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+}
+
+main #catering .content p {
+    margin-bottom: 2rem;
+    opacity: 75%;
+    margin-left: 2.5rem;
+}
+
+main #catering .content button {
+    margin-left: 2.5rem;
+}
+
+main #about {
+    display: flex;
+    padding: 7.5rem 0rem;
+}
+
+main #about .graphic {
+    width: 45%;
+}
+
+main #about .graphic img {
+    border-radius: 1.75rem;
+}
+
+main #about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 55%;
+}
+
+main #about .content h1 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+main #about .content p {
+    margin-bottom: 2rem;
+    opacity: 75%;
+    margin-right: 4rem;
+}
+
+main #contact h1 {
+    font-size: 32px;
+    margin-bottom: 2.5rem;
+}
+
+main #contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+main #contact form label {
+  opacity: 75%;
+  margin-bottom: 8px;
+}
+
+main #contact form input {
+  margin-bottom: 16px;
+  background: transparent;
+  color: black;
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid red;
+  outline: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+main #contact form input:hover {
+  opacity: 75%;
+}
+
+main #contact form input:focus {
+  outline: 2px solid red;
+}
+
+main #contact form textarea {
+  margin-bottom: 16px;
+  resize: none;
+  background: white;
+  color: black;
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid red;
+  min-height: 180px;
+  outline: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+main #contact form textarea:hover {
+  opacity: 75%;
+}
+
+main #contact form textarea:focus {
+  outline: 1px solid red;
+}
+
+main #contact form small {
+    margin-top: 0.5rem;
+    opacity: 50%;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 5rem 0rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+footer .container ul img {
+    height: 72px;
+    width: 72px;
+}
+
+footer .container ul li {
+    margin-bottom: 8px;
+}
+
+footer .container ul a {
+    color: white;
+    opacity: 75%;
+    transition: 0.3s ease;
+}
+
+footer .container ul a:hover {
+    opacity: 100%;
+}
+
+footer .container ul span {
+    opacity: 75%;
+}
+
+#mobileMenuBtn {
+    display: none;
+}
+
+#mobileMenu {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    padding: 2.5rem;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 1rem;
+}
+
+#mobileMenu .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#mobileMenu .top h1 {
+    font-size: 32px;
+}
+
+#mobileMenu .top h1 .red {
+    color: red;
+}
+
+#mobileMenu .top h1 .white {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+#mobileMenu .top h1 .green {
+    color: green;
+}
+
+#mobileMenu .top #mobileMenuClose {
+    font-size: 24px;
+    opacity: 75%;
+    transition: 0.3s ease;
+}
+
+#mobileMenu .top #mobileMenuClose:hover {
+    opacity: 100%;
+}
+
+#mobileMenu .links {
+    display: flex;
+    flex-direction: column;
+}
+
+#mobileMenu .links a {
+    position: relative;
+    color: inherit;
+    opacity: 75%;
+    transition: 0.3s ease;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+}
+
+#mobileMenu .links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+#mobileMenu .links a:hover::after {
+    transform: scaleX(1);
+    opacity: 100%;
+}
+
+@media (max-width: 430px) {
+
+    nav .links {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    #mobileMenuBtn {
+        display: flex;
+        margin-right: 1.5rem;
+        font-size: 24px;
+        opacity: 75%;
+        transition: 0.3s ease;
+    }
+
+    #mobileMenuBtn:hover {
+        opacity: 100%;
+    }
+
+    main #hero {
+        flex-direction: column;
+        padding: 3.25rem 0rem;
+        padding-top: 2rem;
+    }
+
+    main #hero .content {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    main #hero .content button {
+        width: 100%;
+    }
+
+    main #hero .graphic {
+        width: 100%;
+    }
+
+    main #flavors {
+        padding: 3.25rem 0rem;
+    }
+
+    main #flavors .popular {
+        flex-direction: column;
+    }
+
+    main #flavors .popular .flavor {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    main #flavors .popular .flavor .flavor-image {
+        width: 100%;
+    }
+
+    main #catering {
+        flex-direction: column;
+        padding: 3.25rem 0rem;
+    }
+
+    main #catering .content {
+        width: 100%;
+    }
+
+    main #catering .content h1 {
+        margin-left: 0;
+    }
+
+    main #catering .content p {
+        margin-left: 0;
+    }
+
+    main #catering .content button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main #catering .graphic {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    main #about {
+        padding: 3.25rem 0rem;
+        flex-direction: column;
+    }
+
+    main #about .content {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    main #about .content p {
+        margin-right: 0;
+    }
+
+    main #about .graphic {
+        width: 100%;
+    }
+
+    footer ul {
+        width: 25%;
+    }
+
+}
