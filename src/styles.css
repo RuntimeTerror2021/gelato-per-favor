@@ -130,6 +130,7 @@ main #hero {
 
 main #hero .graphic {
     width: 45%;
+    display: none;
 }
 
 main #hero .graphic img {
@@ -139,8 +140,8 @@ main #hero .graphic img {
 main #hero .content {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    width: 55%;
+    align-items: center;
+    width: 100%;
 }
 
 main #hero .content h1 {
@@ -497,12 +498,23 @@ footer .container ul span {
     main #hero {
         flex-direction: column;
         padding: 3.25rem 0rem;
-        padding-top: 2rem;
+        padding-top: 1.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     main #hero .content {
         width: 100%;
         margin-bottom: 2.5rem;
+    }
+
+    main #hero .content h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    main #hero .content p {
+        text-align: center;
     }
 
     main #hero .content button {
@@ -515,6 +527,8 @@ footer .container ul span {
 
     main #flavors {
         padding: 3.25rem 0rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     main #flavors .popular {
@@ -533,6 +547,8 @@ footer .container ul span {
     main #catering {
         flex-direction: column;
         padding: 3.25rem 0rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     main #catering .content {
@@ -560,6 +576,8 @@ footer .container ul span {
     main #about {
         padding: 3.25rem 0rem;
         flex-direction: column;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     main #about .content {
@@ -573,6 +591,12 @@ footer .container ul span {
 
     main #about .graphic {
         width: 100%;
+    }
+
+    main #contact {
+        padding: 3.25rem 0rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     footer ul {
