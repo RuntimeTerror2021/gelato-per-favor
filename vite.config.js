@@ -6,6 +6,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
+                flavors: resolve(__dirname, 'flavors.html'),
                 // privacy: resolve(__dirname, 'privacy.html')
                 // login: resolve(__dirname, "auth/login.html"),
                 // signup: resolve(__dirname, "auth/signup.html"),

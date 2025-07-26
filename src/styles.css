@@ -218,6 +218,10 @@ main #flavors .popular .flavor-content {
     gap: 10px;
 }
 
+main #flavors .btn button {
+    width: 100%;
+}
+
 main #catering {
     display: flex;
     padding: 7.5rem 0rem;

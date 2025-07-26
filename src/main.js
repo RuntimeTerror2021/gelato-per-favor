@@ -28,3 +28,31 @@ mobileMenuClose.addEventListener('click', () => {
     mobileMenu.close();
 
 })
+
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    const to = 'example@gmail.com';
+    const subject = encodeURIComponent("Gelato Ice Cream Inquiry");
+
+    const name = contactForm.fname.value + " " + contactForm.lname.value;
+    const message = contactForm.message.value;
+
+    const body = encodeURIComponent(
+`
+Hello,
+
+${message}
+
+From,
+${name}
+`
+    )
+
+    window.open(`mailto:${to}?subject=${subject}&body=${body}`);
+
+    contactForm.reset();
+
+})
