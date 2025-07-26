@@ -227,23 +227,32 @@
         <h1>Let's get in touch!</h1>
 
         <form onsubmit="return" id="contactForm">
-          <label for="fname">First name *</label>
-          <input
-            type="text"
-            placeholder="Your first name"
-            id="fname"
-            name="fname"
-            required
-          />
+          <div class="names-container">
+            <div class="name-wrapper">
+              <label for="fname">First name *</label>
+              <input
+                      type="text"
+                      placeholder="Your first name"
+                      id="fname"
+                      name="fname"
+                      required
+              />
+            </div>
+            <div class="name-wrapper">
+              <label for="lname">Last name *</label>
+              <input
+                      type="text"
+                      placeholder="Your last name"
+                      id="lname"
+                      name="lname"
+                      required
+              />
+            </div>
+
             <!-- <span class="error-message" id="fname-error"></span> -->
-          <label for="lname">Last name *</label>
-          <input
-            type="text"
-            placeholder="Your last name"
-            id="lname"
-            name="lname"
-            required
-          />
+
+          </div>
+
           <!-- <span  class="error-message" id="lname-error"></span> -->
           <label for="message">What's happening *</label>
           <textarea
@@ -256,9 +265,7 @@
           <button id="submit" class="filled" type="submit">
             Send message
           </button>
-          <small
-            >*Not working? Try disabling pop-up blockers*</small
-          >
+          <small>*Not working? Try disabling pop-up blockers</small>
         </form>
         
       </section>
@@ -286,7 +293,7 @@
 
         <ul>
           <li>Contact</li>
-          <span>Rosario Pollina: 630-400-8945</span>
+          <span>Rosario Pollina: <a href="tel:630-400-8945">630-400-8945</a></span>
           <span>Based in Illinois</span>
         </ul>
 

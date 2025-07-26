@@ -289,6 +289,10 @@ main #about .content p {
     margin-right: 4rem;
 }
 
+main #contact {
+    margin: 0 5rem;
+}
+
 main #contact h1 {
     font-size: 32px;
     margin-bottom: 2.5rem;
@@ -297,6 +301,22 @@ main #contact h1 {
 main #contact form {
   display: flex;
   flex-direction: column;
+}
+
+main #contact form .names-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+main #contact form .names-container .name-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+
 }
 
 main #contact form label {
@@ -477,6 +497,14 @@ footer .container ul span {
     opacity: 100%;
 }
 
+@media(max-width: 720px) {
+
+    main #contact form .names-container {
+        flex-wrap: wrap;
+    }
+
+}
+
 @media (max-width: 430px) {
 
     nav .links {
@@ -519,6 +547,8 @@ footer .container ul span {
 
     main #hero .content p {
         text-align: center;
+        padding: 0;
+        margin: 1rem 0;
     }
 
     main #hero .content button {
@@ -598,10 +628,11 @@ footer .container ul span {
     }
 
     main #contact {
-        padding: 3.25rem 0rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding: 3.25rem 0;
+        margin: 0 1rem;
     }
+
+
 
     footer ul {
         width: 25%;
